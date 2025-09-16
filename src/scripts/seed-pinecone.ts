@@ -1,6 +1,6 @@
 import { config } from "dotenv";
 import path from "path";
-import { getClientPinecone } from "../lib/pinecone";
+import { getClientPinecone } from "../app/lib/pinecone";
 import { InferenceClient } from "@huggingface/inference";
 import products from "../data/products.json";
 
@@ -13,7 +13,6 @@ const seedPinecone = async () => {
     const hf = new InferenceClient(process.env.HF_TOKEN);
 
     //prepare batch embeddings
-
     const batchSize = 10;
 
     for (let i = 0; i < products.length; i += batchSize) {
@@ -32,7 +31,7 @@ const seedPinecone = async () => {
         id: product.id,
         values: Array.isArray(embeddings[idx])
           ? (embeddings[idx].flat(Infinity) as number[])
-          : (embeddings[idx] as number),
+          : [embeddings[idx] as number],
         metadata: {
           ...product,
           colors: product.colors.join("|"),
@@ -50,3 +49,5 @@ const seedPinecone = async () => {
     process.exit();
   }
 };
+
+seedPinecone();
