@@ -1,0 +1,54 @@
+[
+  {
+    "id": "run_001",
+    "name": "Running Shoes",
+    "description": "Lightweight running shoes designed for comfort and performance.",
+    "price": 89.99,
+    "category": "Footwear",
+    "brand": "Nike",
+    "rating": 4.7,
+    "colors": ["black/white", "blue/white", "red/black"],
+    "features": ["zoom air", "breathable mesh upper", "rubber outsole"],
+    "inStock": true,
+    "image": "https://m.media-amazon.com/images/I/71COh2I4tAL._UY1000_.jpg"
+  },
+  {
+    "id": "bag_001",
+    "name": "Leather Backpack",
+    "description": "Stylish leather backpack suitable for work and travel.",
+    "price": 129.99,
+    "category": "Bags",
+    "brand": "Fossil",
+    "rating": 4.4,
+    "colors": ["brown", "black"],
+    "features": ["genuine leather", "laptop compartment", "water-resistant"],
+    "inStock": true,
+    "image": "https://m.media-amazon.com/images/I/71COh2I4tAL._UY1000_.jpg"  
+  },
+  {
+    "id": "travelbag_002",
+    "name": "Travel Backpack with Shoe Compartment",
+    "description": "Durable travel backpack, includes bottom compartment for shoes.",
+    "price": 99.00,
+    "category": "Bags & Travel",
+    "brand": "Sunny 16",
+    "rating": 4.6,
+    "colors": ["olive green", "black"],
+    "features": ["shoe compartment", "water resistant", "laptop sleeve"],
+    "inStock": true,
+    "image": "https://m.media-amazon.com/images/I/71COh2I4tAL._UY1000_.jpg"
+  },
+  {
+    "id": "organizer_001",
+    "name": "Packing Cubes Set",
+    "description": "Set de cubos para organizar bagagem, ideal para viagem.",
+    "price": 34.99,
+    "category": "Travel Accessories",
+    "brand": "Veken",
+    "rating": 4.3,
+    "colors": ["beige", "grey"],
+    "features": ["multi set", "lightweight", "mesh panels"],
+    "inStock": true,
+    "image": "https://m.media-amazon.com/images/I/71COh2I4tAL._UY1000_.jpg"
+  }
+]
