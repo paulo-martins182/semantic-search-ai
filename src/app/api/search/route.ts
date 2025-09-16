@@ -38,11 +38,15 @@ export const POST = async (request: Request) => {
       vector: embedding,
       topK: 10,
       includeMetadata: true,
+      filter: { inStock: true },
     });
+
+    const filteredResults =
+      results.matches?.filter((item) => item.score && item.score > 0.4) || [];
 
     //Format results
 
-    const produtcs = results.matches?.map((item) => ({
+    const produtcs = filteredResults.map((item) => ({
       ...item.metadata,
       colors:
         typeof item.metadata?.colors === "string"
