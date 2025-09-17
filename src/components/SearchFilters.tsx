@@ -20,7 +20,7 @@ export const SearchFilters = () => {
         <input
           name="q"
           type="text"
-          placeholder="Search for products (e.g. 'comfortable running shoes for flat feet')"
+          placeholder="Search you prefer (e.g. 'something light and sweet')"
           className="w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
         />
         <IoIosSearch className="absolute left-3 top-3.5 h-5 w-5 text-gray-400" />

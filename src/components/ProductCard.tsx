@@ -65,7 +65,7 @@ export const ProductCard = ({ product }: CardProductTypes) => {
         </div>
 
         {/* Cores */}
-        <div className="flex items-center gap-2 mt-3">
+        {/* <div className="flex items-center gap-2 mt-3">
           {product.colors.map((color, i) => (
             <span
               key={i}
@@ -73,7 +73,7 @@ export const ProductCard = ({ product }: CardProductTypes) => {
               style={{ backgroundColor: color }}
             />
           ))}
-        </div>
+        </div> */}
 
         {/* Features */}
         <ul className="mt-3 text-sm text-gray-700 space-y-1">

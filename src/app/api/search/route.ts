@@ -42,7 +42,7 @@ export const POST = async (request: Request) => {
     });
 
     const filteredResults =
-      results.matches?.filter((item) => item.score && item.score > 0.4) || [];
+      results.matches?.filter((item) => item.score && item.score > 0.3) || [];
 
     //Format results
 
